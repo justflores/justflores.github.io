@@ -2,6 +2,26 @@ html {
   scroll-behavior: smooth;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2e2e2e; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}    
+
 .hero.is-dark .navbar-menu {
     background-color: transparent;
 }
@@ -21,3 +41,9 @@ html {
       max-width: 100%;
       height: auto;
    } 
+a{
+    color: #3a3a3a;
+}
+a:hover{
+    color: darkslateblue;
+}
