@@ -8,12 +8,13 @@
         <!-- BULMA STYLESHEET -->
         <link rel="stylesheet" href="css/bulma.css">
         <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/bulma-divider.min.css">
         <!-- ICONS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <!-- CONTENT -->
-        <section class="hero is-custom is-fullheight" id="top">
+        <section class="hero is-dark header-image is-fullheight" id="top">
   <!-- Hero head: will stick at the top -->
             <div class="hero-head">
                 <nav class="navbar" >
@@ -49,31 +50,18 @@
            <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title">
-            Title
+            Hi there, my name's Justine!
           </h1>
+          <div class="is-divider" data-content="AND"></div>
           <h2 class="subtitle">
-            Subtitle
+            I craft gorgeous websites
           </h2>
         </div>
       </div>
 
       <!-- Hero footer: will stick at the bottom -->
-            <div class="hero-foot">
-        <nav class="tabs">
-          <div class="container">
-            <ul>
-              <li class="is-active"><a href="#overview">Overview</a></li>
-              <li><a>Modifiers</a></li>
-              <li><a>Grid</a></li>
-              <li><a>Elements</a></li>
-              <li><a>Components</a></li>
-              <li><a>Layout</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
         </section>
-        <section class="hero is-success is-fullheight" id="overview">
+        <section class="hero is-white is-fullheight" id="overview">
             <div class="hero-body">
                 <div class="container is-text-centered">
                     <h1 class="title">
@@ -95,7 +83,7 @@
                     <img src="resources/img/galaxy.png" style="height: auto; width: 10%;">
                 </p>
                 <p>
-                    Made by <strong>yours truly</strong>. 
+                    Crafted by <strong>yours truly</strong>. 
                 </p>
                 <p>
                     <a href="https://www.facebook.com/x4xxy" class="fa fa-facebook"></a>
@@ -110,4 +98,33 @@
         </footer>
         <!-- END OF FOOTER -->
     </body>
+    
+    
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
 </html>

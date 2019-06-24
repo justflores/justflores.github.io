@@ -1,4 +1,19 @@
-.hero.is-custom {
-  background-color: #FFFFFF;
-  color: whitesmoke;
+html {
+  scroll-behavior: smooth;
 }
+
+.header-image {
+    background-image: url('../resources/img/header2.JPG');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.darken{
+    filter: brightness(50%);
+}
+.img-responsive {
+      display: block; 
+      max-width: 100%;
+      height: auto;
+   } 
