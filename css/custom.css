@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.hero.is-dark .navbar-menu {
+    background-color: transparent;
+}
+
 .header-image {
     background-image: url('../resources/img/header2.JPG');
     background-position: center center;
