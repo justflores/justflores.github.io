@@ -27,7 +27,7 @@ html {
 }
 
 .header-image {
-    background-image: url('../resources/img/header.PNG');
+    background-image: url('../resources/img/header.png') !important;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
