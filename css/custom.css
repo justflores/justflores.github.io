@@ -27,7 +27,7 @@ html {
 }
 
 .header-image {
-    background-image: url('../resources/img/header2.JPG');
+    background-image: url('../resources/img/header.PNG');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -40,7 +40,10 @@ html {
       display: block; 
       max-width: 100%;
       height: auto;
-   } 
+   }
+.navbar-item{
+  color: #ffffff;
+}
 a{
     color: #3a3a3a;
 }
